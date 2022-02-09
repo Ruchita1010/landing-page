@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header  */
+#header{
+    width: 100%;
+    height: 100vh;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: rgb(3, 1, 0);
+}
+
+#nav{
+    padding: 2rem;
+}
+
+#nav, #intro-content{
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo img{
+    width: 3rem;
+}
+
+#planet-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+#planet-list a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#planet-list a:hover{
+    color: #00a7f7;
+}
+
+#intro-text{
+    width: 50%;
+    padding: 4rem;
+}
+
+#intro-text h1{
+    color: #00a7f7;
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+}
+
+#header-img{
+    width: 60%;
+    height: 80vh;
+    background: url(./images/blue-planet.jpg) no-repeat center/cover;
+}
+
+/* Main Section  */
+#main-content{
+    height: 100vh;
+    background-color:#00a7f7;
+}
