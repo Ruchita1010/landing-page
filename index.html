@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="./styles.css">
     <title>ExoPlanets</title>
 </head>
 
 <body>
-    <div id="header">
+    <header>
         <nav>
             <div id="nav">
                 <div id="logo">
@@ -23,25 +24,71 @@
                 </ul>
             </div>
         </nav>
-        <section>
-            <div id="intro-content">
-                <div id="intro-text">
-                    <h1>EXOPLANETS</h1>
-                    <p>Exoplanets are planets beyond our own solar system. Thousands have been discovered in the past
-                        two decades, mostly with NASA's Kepler Space Telescope.</p>
-                    <p>These worlds come in a huge variety of sizes and orbits. Some are gigantic planets hugging close
-                        to their parent stars; others are icy, some rocky!!!
-                    </p>
-                </div>
-                <div id="header-img"></div>
+    </header>
+    <section id="hero-section">
+        <div id="intro-content">
+            <div id="intro-text">
+                <h1>EXOPLANETS</h1>
+                <p>Exoplanets are planets beyond our own solar system. Thousands have been discovered in the past
+                    two decades, mostly with NASA's Kepler Space Telescope.</p>
+                <p>These worlds come in a huge variety of sizes and orbits. Some are gigantic planets hugging close
+                    to their parent stars; others are icy, some rocky!!!
+                </p>
             </div>
-        </section>
-    </div>
+            <div id="hero-img"></div>
+        </div>
+    </section>
     <main>
-        <div id="main-content">
-
+        <div class="title-div">
+            <h2 id="main-section-title">SOME EXOPLANETS</h2>
+        </div>
+        <div class="exoplanets">
+            <div class="exoplanet">
+                <img src="./images/kepler-36-b.png" alt="image of kepler-36-b">
+                <p>Kepler-36 b</p>
+                <p>[Super Earth]</p>
+            </div>
+            <div class="exoplanet">
+                <img src="./images/kepler-22-b.png" alt="image of kepler-22-b">
+                <p>Kepler-22 b</p>
+                <p>[Super Earth]</p>
+            </div>
+            <div class="exoplanet">
+                <img src="./images/GJ-504-b.png" alt="image of GJ-504-b">
+                <p>GJ-504-b</p>
+                <p>[Gas Giant]</p>
+            </div>
+            <div class="exoplanet">
+                <img src="./images/55-cancri-e.png" alt="image of 55-cancri-e">
+                <p>55 Cancri e</p>
+                <p>[Super Earth]</p>
+            </div>
         </div>
     </main>
+    <section>
+        <div id="explore-section">
+            <div class="card">
+                <div class="card-text">
+                    <h3>Just names aren't enough right?...Wanna explore more exoplanets?</h3>
+                    <p>Click EXLORE to check out NASA's amazing site</p>
+                </div>
+                <button class="btn" type="submit"><a href="https://exoplanets.nasa.gov/eyes-on-exoplanets/#/"
+                        target="_blank">EXPLORE</a></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Made With ❤ By Ruchita</p>
+        <p>
+            <a href="https://www.flaticon.com/free-icons/planet" title="planet icons" target="_blank">Planet
+                icons created by Freepik - Flaticon</a>
+            &
+            <a href="https://unsplash.com/@simonppt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank">Blue planet photo by Simon Lee on</a>
+            <a href="https://unsplash.com/s/photos/planets?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank">Unsplash</a>
+        </p>
+    </footer>
 </body>
 
 </html>

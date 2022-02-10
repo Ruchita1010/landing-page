@@ -4,34 +4,28 @@
     box-sizing: border-box;
 }
 
-/* Header  */
-#header{
-    width: 100%;
-    height: 100vh;
-    font-size: 1.4rem;
-    color: #fff;
-    background-color: rgb(3, 1, 0);
-}
-
-#nav{
+/* Header*/
+header{
     padding: 2rem;
-}
-
-#nav, #intro-content{
-    margin: 0 4rem;
-    display: flex;
-    justify-content: space-between;
+    font-size: 1.4rem;
+    background-color: #000;
 }
 
 #logo img{
     width: 3rem;
 }
 
+#nav{
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
 #planet-list{
     display: flex;
     align-items: center;
-    list-style: none;
     gap: 2rem;
+    list-style: none;
 }
 
 #planet-list a{
@@ -43,25 +37,216 @@
     color: #00a7f7;
 }
 
+
+/* Hero Section  */
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    color: #fff;
+    font-size: 1.4rem;
+    background-color: #000;
+}
+
+#intro-content{
+    display: flex;
+    gap: 1rem;
+    margin: 0 4rem;
+}
+
 #intro-text{
     width: 50%;
     padding: 4rem;
 }
 
 #intro-text h1{
-    color: #00a7f7;
     margin-bottom: 2rem;
+    color: #00a7f7;
     font-size: 3.2rem;
 }
 
-#header-img{
-    width: 60%;
+#hero-img{
+    width: 100%;
     height: 80vh;
+    margin-top: -2rem;
     background: url(./images/blue-planet.jpg) no-repeat center/cover;
 }
 
 /* Main Section  */
-#main-content{
-    height: 100vh;
-    background-color:#00a7f7;
+.title-div{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#main-section-title{
+    padding: 2rem;    
+    color: #00a7f7;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.exoplanets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 6rem 2rem;
+    background-color:#000;
+}
+
+.exoplanet{
+    max-width: 20%; 
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid #3d3c3c;
+}
+
+.exoplanet img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.exoplanet:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    border: 1px solid #00a7f7;
+}
+
+
+/* Explore Section  */
+#explore-section{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(90deg,#00a7f7, #02547a);
+}
+
+.card{
+    max-width: 70%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #000;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+
+.btn{
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+    background-color: #00a7f7;
+    border: none;
+}
+
+.btn a{
+    color: #000;
+    text-decoration: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+/* Footer  */
+footer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00a7f7;
+    background-color: #000;
+    font-size: 2rem;
+}
+
+footer a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #00a7f7;
+}
+
+
+/* Media Queries  */
+@media screen and (max-width:1000px) {
+    #nav{
+        margin: 0 1rem;
+    }
+
+    #intro-content{
+        margin: 0;
+    }
+
+    #intro-text{
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width:880px){
+    #nav{
+        margin: 0;
+    }
+
+    #planet-list{
+        display: none;
+    }
+
+    #hero-section{
+        padding: 0;
+    }
+
+    #intro-content{
+        position: relative;
+        margin: 0;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    #intro-text h1{
+        text-shadow: 4px 4px #000;
+    }
+
+    #intro-text{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 3rem;
+    }
+
+    #hero-img{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #main-section-title{
+        margin-top: 4rem;
+    }
+
+    .exoplanet{
+        min-width: 90%;
+    }
+
+    .card{
+        flex-wrap: wrap;
+    }
+
+    .btn{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    footer a{
+        font-size: 0.6rem;
+    }
 }
