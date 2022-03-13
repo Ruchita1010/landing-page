@@ -1,9 +1,15 @@
 # Landing Page
 Landing page created using basic HTML and CSS for The Odin Project
+Just some of the cool exoplanets!!
 
-# Learning
-I can flex more about flexbox now ;)
-I never used gap property before this...I completely forgot it exists. I understood justify-content and align-items more properly. Had great time learning some new stuff!! 
+# Learnings
+* I can flex more about flexbox now (～￣▽￣)～
+* Gap property in flexbox [ Never used gap property before this...I completely forgot it exists (⊙ˍ⊙) ]
+* Understood justify-content and align-items more properly. 
+Had great time learning some new stuff!! 
 
-## Live Preview
-[landing-page] [https://ruchita1010.github.io/landing-page/]
+# Preview
+![image](/preview-images/landing-page.png)
+
+# Demo
+👉 [Live Demo](https://ruchita1010.github.io/landing-page/)
